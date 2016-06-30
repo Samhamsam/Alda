@@ -145,7 +145,7 @@ public class TreeDictionary<K extends Comparable<? super K>, V> implements
 		// suchen Erfolgreich
 		currentTime = System.nanoTime();
 		for (int i = 0; i < size; i++) {
-			search(data[i].key);
+			//search(data[i].key);
 		}
 		time = Long.toString((System.nanoTime() - currentTime) / (1000));
 		sb.append(("ErfolgSuche: " + "SortedArrayDictionary" + " Zeit: " + time
@@ -154,7 +154,7 @@ public class TreeDictionary<K extends Comparable<? super K>, V> implements
 		// suchen nicht Erfolgreich
 		currentTime = System.nanoTime();
 		for (int i = 0; i < size; i++) {
-			search((K) data[i].value);
+			//search((K) data[i].value);
 		}
 		time = Long.toString((System.nanoTime() - currentTime) / (1000));
 		sb.append(("NichtErfolgSuche: " + "SortedArrayDictionary" + " Zeit: "
